@@ -5,4 +5,4 @@ def resources_on_page(total: int, page_size: int, page: int) -> int:
     start = (page - 1) * page_size
     if start >= total:
         return 0
-    return min(page_size, total - start)
+    return page_size
